@@ -1,0 +1,99 @@
+body {
+  background-color: #282c34;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+}
+
+pre {
+  margin: 0;
+}
+
+#code-display {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.line-numbers {
+  color: #616367;
+  font-family: monospace;
+  text-align: end;
+}
+
+textarea {
+  background-color: transparent;
+  resize: none;
+  width: 100%;
+  padding: 0;
+  margin-left: 1rem;
+  color: #616367;
+  min-height: calc(100vh - 2rem);
+  border: none;
+  outline: none;
+}
+
+.btns-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.15;
+  transition: opacity 200ms ease-in-out;
+  background-color: #4c5059;
+  padding: 1rem;
+}
+.btns-wrapper:hover {
+  opacity: 1;
+}
+
+.logo {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: inline-block;
+  font-family: "Arial";
+}
+.logo:hover {
+  text-decoration: underline;
+}
+
+.btns {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+.btns > * + * {
+  margin-left: 0.25rem;
+}
+
+.btn {
+  cursor: pointer;
+  background: none;
+  border: 1px solid #abb2bf;
+  color: #abb2bf;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 200ms ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 0.85rem;
+}
+.btn:hover {
+  background-color: #abb2bf;
+  color: #4c5059;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .btns-wrapper {
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=styles.css.map */
