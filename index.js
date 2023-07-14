@@ -43,7 +43,7 @@ const Document_1 = __importDefault(require("./models/Document"));
 const app = (0, express_1.default)();
 const port = process.env.PORT || 3000;
 app.set("view engine", "ejs");
-app.use(express_1.default.static("css"));
+app.use(express_1.default.static("public"));
 app.use(express_1.default.urlencoded({ extended: true }));
 mongoose_1.default.connect(process.env.MONGO_URI || "");
 app.get("/", (req, res) => {
@@ -99,3 +99,4 @@ app.get("/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
 app.listen(port, () => {
     console.log("Code Dump listening on port " + port);
 });
+exports.default = app;

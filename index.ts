@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
-app.use(express.static("css"));
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(process.env.MONGO_URI || "");
@@ -69,3 +69,5 @@ app.get("/:id", async (req, res) => {
 app.listen(port, () => {
   console.log("Code Dump listening on port " + port);
 });
+
+export default app;
